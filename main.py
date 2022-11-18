@@ -1,9 +1,12 @@
+from ImpliedVolatility.VolatilityCurve import get_volatility_curve
+from Data.Tradier import get_tradier_data
 
-def main():
+if __name__ == "__main__":  
 
+    def main():
 
-    return 0
+        get_volatility_curve()
 
-if __name__ == "main":
+        return 0
 
     main()

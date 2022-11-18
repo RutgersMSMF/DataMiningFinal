@@ -39,11 +39,13 @@ fig.suptitle("Gaussian Process Regression")
 ax1.plot(y, linestyle = "dotted", label = "Dataset")
 ax1.plot(mean_prediction1, linestyle = "dashdot", label = "Gaussian Prediction")
 ax1.plot(linear_prediction, linestyle = "dashed", label = "Linear Prediction")
+ax1.set_title("Without Noise")
 ax1.legend(loc = "best")
 
 ax2.plot(y, linestyle = "dotted", label = "Dataset")
 ax2.plot(mean_prediction2, linestyle = "dashdot", label = "Gaussian Prediction")
 ax2.plot(linear_prediction_noise, linestyle = "dashed", label = "Linear Prediction")
+ax2.set_title("With Noise")
 ax2.legend(loc = "best")
 
 plt.show()
