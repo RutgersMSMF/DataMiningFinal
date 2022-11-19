@@ -4,6 +4,9 @@ from Data.Tradier import get_tradier_data
 if __name__ == "__main__":  
 
     def main():
+        """
+        Wraps All Methods 
+        """
 
         get_volatility_curve()
 
