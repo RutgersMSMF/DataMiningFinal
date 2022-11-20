@@ -2,6 +2,10 @@ import requests
 import numpy as np
 import matplotlib.pyplot as plt
 
+def get_quote():
+
+    return 0
+
 def get_tradier_data():
     """
     Returns Tradier Implied Volatility
@@ -104,15 +108,15 @@ def get_tradier_data():
             # Add Strikes
             strikes.insert(i + 1, strikes[i] + 1)
 
-    fig, (ax1, ax2) = plt.subplots(2)
-    fig.suptitle("Market Data")
+    # fig, (ax1, ax2) = plt.subplots(2)
+    # fig.suptitle("Market Data")
 
-    ax1.plot(strikes, ivol)
-    ax1.set_title("Implied Volatility")
+    # ax1.plot(strikes, ivol)
+    # ax1.set_title("Implied Volatility")
 
-    ax2.plot(strikes, midpoint)
-    ax2.set_title("Midpoint Price")
+    # ax2.plot(strikes, midpoint)
+    # ax2.set_title("Midpoint Price")
 
-    plt.show()
+    # plt.show()
 
-    return np.array(midpoint).reshape(-1, 1), np.array(ivol)
+    return np.array(midpoint).reshape(-1, 1), np.array(ivol), strikes
